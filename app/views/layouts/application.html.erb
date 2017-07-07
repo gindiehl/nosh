@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NOSH</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Nom Nom Nosh</h1>
+        <h4>We sustain your clients, talent, & crew on location with distinct nosh.</h4>
+      </div>
+      <ul class="user-nav">
+        <li><%= link_to "Home", root_path %></li>
+      <% if current_user %>
+        <%= current_user.user_name %> |
+        <li><%= link_to "Sign out", '/signout' %></li>
+      <% else %>
+        <li><%= link_to "Sign up", 'signup' %></li> |
+        <li><%= link_to "Sign in", '/signin' %></li> |
+      <% end %>
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div class="container">
+        <p><%= flash[:alert] %></p>
+        <p><%= flash[:notice] %></p>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+      
