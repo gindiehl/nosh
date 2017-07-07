@@ -4,7 +4,7 @@ Sustaining client, talent, & crew on location with distinct nosh.
 ### Description
 This app was created to meet specifications for a second Ruby on Rails independent project at Epicodus. It uses bcrypt to allow users to create & maintain personal accounts as well as allows authorized admins CRUD/L functionality on services & associated reviews, dynamically persisting all data via Postgres with ActiveRecord.
 
-### 2. Specifications:
+### Specifications:
 
 | Behavior | Input | Output |
 |----------|-------|--------|
