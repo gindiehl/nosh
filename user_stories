@@ -1,0 +1,13 @@
+As an Admin, I'd like authorization to create, update, and delete services.
+
+As an Admin, I'd like authorization to delete inappropriate user reviews.
+
+As a User, I'd like to to sign up for a personal account & maintain my account (update/delete) via a profile page.
+
+As a User, I'd like authorization to leave reviews on specific services.
+
+As a User, I'd like to visit the site via a landing page with basic info about services offered, including navigation options for perusing the site. Nav options should include links to visit 'Home', 'Shop', & 'My Account'. 
+
+As a User, I'd like to see a list of all services offered.
+
+As a User, I'd like to see a detail page for each specific service, including an area for my review of that service.
