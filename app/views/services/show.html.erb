@@ -1,0 +1,18 @@
+<div class="container">
+  <h3>Name: <%= @service.name %></h3>
+  <p>About: <%= @service.description %></p>
+  <p>Price: $ <%= @service.price %></p>
+</div>
+
+<% if @service.reviews.any? %>
+  <ul>
+    <% @service.reviews.each do |review| %>
+      <li>
+        <p>"<%= review.content %>"</p>
+        <em>~ <%= review.author %></em><br>
+      </li>
+<% end %>
+  </ul>
+<% else %>
+  <p>There are no reviews yet!</p>
+<% end %>

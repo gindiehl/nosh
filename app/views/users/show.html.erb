@@ -1,0 +1,16 @@
+<h2>Welcome <%= current_user.user_name %></h2>
+
+  <% if current_user.reviews.any? %>
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>Your reviews</h4>
+      <ul>
+        <% current_user.reviews.each do |review| %>
+        <li><%= link_to review.session.name, session_review_path(review.session, review) %></li>
+        <% end %>
+        <% else %>
+        <em>You have not reviewed any services!</em>
+        <% end %>
+      </ul>
+    </div>
+  </div>
