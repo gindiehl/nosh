@@ -2,7 +2,7 @@ Service.destroy_all
 Review.destroy_all
 User.destroy_all
 
-user = User.create!(user_name: "Artemis", email: "artemis@email.com", password: "mygoddess", password_confirmation: "mygoddess", admin: false)
+user = User.create!(user_name: "Artemis", email: "artemis@email.com", password: "mygoddess", password_confirmation: "mygoddess", admin: true)
 user1 = User.create!(user_name: "Demeter", email: "demeter@email.com", password: "mygoddess", password_confirmation: "mygoddess", admin: false)
 user2 = User.create!(user_name: "Hebe", email: "hebe@email.com", password: "mygoddess", password_confirmation: "mygoddess", admin: false)
 

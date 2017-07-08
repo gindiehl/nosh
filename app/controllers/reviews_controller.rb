@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :authorize, only: [:new, :create, :edit]
+  before_action :authorize, only: [:new, :create, :edit, :destroy]
 
   def secret
   end
@@ -20,17 +20,18 @@ class ReviewsController < ApplicationController
     end
   end
 
-  def show
-    @review = Review.find(params[:id])
-    @service = @review.service
-  end
+  # def show
+  #   @review = Review.find(params[:id])
+  #   @service = @review.service
+  # end
 
   def edit
+    @service = Service.find(params[:service_id])
     @review = Review.find(params[:id])
-    @service = @review.service
   end
 
   def update
+    @service = Service.find(params[:service_id])
     @review = Review.find(params[:id])
     if @review.update(review_params)
       flash[:notice] = "Your review was successfully updated!"
@@ -41,11 +42,11 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
-    @service = Review.find(params[:id]).service
-    if Review.find(params[:id]).destroy
+    @service = Service.find(params[:service_id])
+    @review = Review.find(params[:id])
+    @review.destroy
       flash[:notice] = "Review successfully deleted!"
-    redirect_to service_path(@service)
-    end
+    redirect_to service_path(@review.service)
   end
 
 private
