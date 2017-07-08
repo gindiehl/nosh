@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 describe Review do
-  it { should belong_to :service, :user }
-  it { should validate_presence_of :author, :content, :user_id, :service_id }
+  it { should belong_to :service }
+  it { should belong_to :user }
+  it { should validate_presence_of :author }
+  it { should validate_presence_of :content }
+  it { should validate_presence_of :user_id }
+  it { should validate_presence_of :service_id } 
 end

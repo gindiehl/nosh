@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'home#index'
+  root to: 'services#index'
 
   resources :services do
     resources :reviews, except: [:show, :index]

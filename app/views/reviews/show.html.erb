@@ -1,0 +1,13 @@
+<h3><%= @review.user.user_name %>'s review for <%= @service.name %></h3>
+<p><%= @review.content %></p>
+
+<hr>
+<ul class="user-links">
+  <li><%= link_to "Return to service", service_path(@service) %></li>
+  <% if current_user %>
+    <li><%= link_to "Edit review", edit_service_review_path(@service, @review) if current_user.id === @review.user.id %></li>
+    <li><%= link_to "Delete review", service_review_path(@service, @review),
+                                      :data => {:confirm => "You sure?",
+                                                :method => "delete"} if current_user.id === @review.user.id %></li>
+  <% end %>
+</ul>
