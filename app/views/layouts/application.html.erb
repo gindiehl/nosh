@@ -14,16 +14,18 @@
         <h1>Nom Nom Nosh</h1>
         <h4>Sustaining client, talent, & crew on location with distinct nosh.</h4>
       </div>
-      <ul class="user-nav">
-        <li><%= link_to "Home", services_path %></li>
-      <% if current_user %>
-        <%= current_user.user_name %> |
-        <li><%= link_to "Sign out", '/signout' %></li>
-      <% else %>
-        <li><%= link_to "Sign up", 'signup' %></li> |
-        <li><%= link_to "Sign in", '/signin' %></li> |
-      <% end %>
-      </ul>
+      <header class="navbar navbar">
+        <ul class="nav navbar-nav">
+          <li><%= link_to "Home", services_path %></li>
+        <% if current_user %>
+          <%= current_user.user_name %>
+          <li><%= link_to "Sign out", '/signout' %></li>
+        <% else %>
+          <li><%= link_to "Sign up", 'signup' %></li>
+          <li><%= link_to "Sign in", '/signin' %></li>
+        <% end %>
+        </ul>
+      </header>
     </div>
     <div class="content-wrapper">
       <div class="container">

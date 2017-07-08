@@ -1,5 +1,5 @@
 <div class="container">
-  <h3>Name: <%= @service.name %></h3>
+  <h3><%= @service.name %></h3>
   <p>About: <%= @service.description %></p>
   <p>Price: $ <%= @service.price %></p>
 </div>
@@ -16,3 +16,7 @@
 <% else %>
   <p>There are no reviews yet!</p>
 <% end %>
+
+<% if current_user %>
+  <li><%= link_to "Add a review", new_service_review_path(@service) %></li>
+<% end %>  

@@ -1,0 +1,36 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.jumbotron {
+  text-align: center;
+  background-color: #edf5f9;
+}
+
+.nav {
+  float: right;
+}
+
+body {
+  padding: 5%;
+  background-color: #edf5f9;
+}
+
+li {
+  padding: 2em;
+  list-style: none;
+}
+
+.jumbotron, h1 {
+  text-align: center;
+  color: green;
+}
+
+a {
+  color: purple;
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: magenta;
+  font-style: oblique;
+}
