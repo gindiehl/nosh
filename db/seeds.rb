@@ -18,3 +18,4 @@ user2 = User.create!(user_name: "Hebe", email: "hebe@email.com", password: "mygo
 end
 
 p "Created #{Service.count} services"
+p "Created #{Review.count} reviews"
