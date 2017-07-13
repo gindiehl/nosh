@@ -20,3 +20,10 @@
 <% if current_user %>
   <li><%= link_to "Add a review", new_service_review_path(@service) %></li>
 <% end %>
+
+<% if current_user %>
+  <% if current_user.admin == true %>
+    <%= link_to "Edit Service", edit_service_path(@service) %>
+    <%= link_to "Delete Service", service_path(@service), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+  <% end %>
+<% end %>

@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   get '/signin' => 'sessions#new'
   post '/signin' => 'sessions#create'
   get '/signout' => 'sessions#destroy'
+
+# admin routes
+  get '/admin' => 'services#admin'
 end

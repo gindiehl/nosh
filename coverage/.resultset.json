@@ -2,6 +2,39 @@
   "RSpec": {
     "coverage": {
       "/Users/Guest/Desktop/nosh/spec/features/add_review_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/nosh/spec/features/show_service_detail_spec.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/nosh/spec/features/user_sign_up_spec.rb": [
         1,
         null,
         1,
@@ -10,6 +43,8 @@
         1,
         1,
         1,
+        1,
+        0,
         0,
         0,
         0,
@@ -239,13 +274,33 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/nosh/app/controllers/admin_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/nosh/app/controllers/application_controller.rb": [
         1,
         1,
         1,
         null,
         1,
-        4,
+        2,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
         0,
         null,
         null,
@@ -324,7 +379,7 @@
         1,
         null,
         1,
-        3,
+        1,
         null,
         null,
         1,
@@ -461,8 +516,8 @@
         1,
         null,
         1,
-        5,
-        5,
+        4,
+        4,
         null,
         null,
         1,
@@ -476,6 +531,7 @@
         null
       ],
       "/Users/Guest/Desktop/nosh/spec/factories.rb": [
+        1,
         1,
         1,
         1,
@@ -511,40 +567,14 @@
         1,
         1,
         1,
+        null,
+        null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/nosh/spec/support/factory_girl.rb": [
         1,
         1,
-        null
-      ],
-      "/Users/Guest/Desktop/nosh/spec/features/show_service_detail_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/nosh/spec/features/user_sign_up_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
         null
       ],
       "/Users/Guest/Desktop/nosh/spec/models/review_spec.rb": [
@@ -581,6 +611,6 @@
         null
       ]
     },
-    "timestamp": 1499567251
+    "timestamp": 1499911732
   }
 }

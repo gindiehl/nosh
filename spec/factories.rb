@@ -4,12 +4,13 @@ FactoryGirl.define do
     email 'athena@athena.com'
     password 'mycoolpass'
     password_confirmation 'mycoolpass'
+    admin nil
   end
 
   factory :service, class: Service do
     name 'Martini'
-    description 'Cold, dirty, & dry'
-    price '360'
+    description 'Cold and dirty and dry'
+    price '36'
   end
 
   factory :review, class: Service do

@@ -26,10 +26,11 @@ This app was created to meet specifications for a second Ruby on Rails independe
 
   * `git clone https://github.com/jinjin8/nosh`
   * `cd nosh`
-  * Start Postgres server
   * `bundle install`
+  * Start Postgres server
   * `rake db:create`
   * `rake db:migrate`
+  * `rake db:seed` to use seed file
   * `rails s`
   * Open browser and navigate to http://localhost:3000/
 
@@ -39,6 +40,7 @@ This app was created to meet specifications for a second Ruby on Rails independe
   * JavaScript
   * Ruby
   * Rails
+  * Faker
   * Postgres
   * PSQL
   * ActiveRecord
