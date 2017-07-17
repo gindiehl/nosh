@@ -4,7 +4,7 @@ FactoryGirl.define do
     email('athena@athena.com')
     password('mycoolpass')
     password_confirmation('mycoolpass')
-    admin nil
+    admin true
   end
 
   factory :service, class: Service do
