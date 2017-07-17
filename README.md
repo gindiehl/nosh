@@ -26,6 +26,7 @@ This app was created to meet specifications for a second Ruby on Rails independe
 
   * `git clone https://github.com/jinjin8/nosh`
   * `cd nosh`
+  * `git init`
   * `bundle install`
   * Start Postgres server
   * `rake db:create`
