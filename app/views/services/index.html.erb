@@ -1,3 +1,11 @@
+<% if current_user %>
+  <% if current_user.admin === true %>
+  <p>Hello Admin!</p>
+  <%= link_to "Add a New Service", new_service_path %>
+  <% end %>
+<% end %>  
+
+
 <% if @services.any? %>
   <% @services.each do |service| %>
     <ul>
