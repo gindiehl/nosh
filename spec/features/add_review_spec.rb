@@ -6,10 +6,10 @@ describe "add a review path" do
     service = FactoryGirl.create(:service)
     visit services_path
     click_link "Sign in"
-    save_and_open_page
     expect(page).to have_content "Sign in"
-    fill_in 'Email', :with => 'user.email'
-    fill_in 'Password', :with => 'user.password'
+    fill_in 'Email', :with => user.email
+    fill_in 'Password', :with => user.password
+    click_button 'Sign in'
     click_on 'Martini'
     click_link "Add a review"
     expect(page).to have_content "Author"

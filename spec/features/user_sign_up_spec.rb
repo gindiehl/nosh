@@ -6,10 +6,10 @@ describe "the user sign up path" do
     visit '/'
     click_link 'Sign up!'
     expect(page).to have_content 'Sign up'
-    fill_in 'user[user_name]', :with => 'user.user_name'
-    fill_in 'user[email]', :with => 'user.email'
-    fill_in 'user[password]', :with => 'user.password'
-    fill_in 'user[password_confirmation]', :with => 'user.password_confirmation'
+    fill_in 'user[user_name]', :with => user.user_name
+    fill_in 'user[email]', :with => user.email
+    fill_in 'user[password]', :with => user.password
+    fill_in 'user[password_confirmation]', :with => user.password_confirmation
     click_button 'Sign Up'
     expect(page).to have_content "Nom Nom Nosh"
   end
