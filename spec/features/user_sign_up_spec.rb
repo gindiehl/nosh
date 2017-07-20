@@ -12,7 +12,6 @@ describe "the user sign up path" do
     fill_in 'user[password]', :with => user.password
     fill_in 'user[password_confirmation]', :with => user.password_confirmation
     click_button 'Sign Up'
-    save_and_open_page
     expect(page).to have_content 'Nom Nom Nosh'
   end
 end
