@@ -1,4 +1,5 @@
 class ServicesController < ApplicationController
+  before_action :admin, only: [:new, :create, :edit, :destroy]
 
   def index
     @services = Service.all.order(:name)
