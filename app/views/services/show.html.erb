@@ -10,6 +10,11 @@
       <li>
         <p>"<%= review.content %>"</p>
         <em>~ <%= review.author %></em><br>
+        <% if current_user %>
+          <% if current_user.admin == true %>
+              <%= link_to "Delete Review", service_review_path(@service, review), :data => {confirm: "Are you sure?", method: "delete"} %>
+          <% end %>
+        <% end %>
       </li>
 <% end %>
   </ul>
@@ -23,7 +28,7 @@
 
 <% if current_user %>
   <% if current_user.admin == true %>
-    <%= link_to "Edit Service", edit_service_path(@service) %>
+    <%= link_to "Edit Service", edit_service_path(@service) %><br>
     <%= link_to "Delete Service", service_path(@service), :data => {:confirm => "Are you sure?", :method => "delete"} %>
   <% end %>
 <% end %>
