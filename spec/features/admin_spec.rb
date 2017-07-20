@@ -29,6 +29,24 @@ describe "the admin path" do
     click_button "Create Service"
   end
 
+  it "allows admin to edit a service" do
+    user = FactoryGirl.create(:user)
+    service = FactoryGirl.create(:service)
+    visit '/'
+    click_on 'Sign in'
+    expect(page).to have_content "Sign in"
+    fill_in 'Email', :with => user.email
+    fill_in 'Password', :with => user.password
+    click_button 'Sign in'
+    expect(page).to have_content "Hello Admin!"
+    click_on "Martini"
+    click_link "Edit Service"
+    fill_in 'Name', :with => service.name
+    fill_in 'Description', :with => service.description
+    fill_in 'Price', :with => service.price
+    click_button "Update Service"
+  end
+
   it "allows admin to delete a review" do
     user = FactoryGirl.create(:user)
     service = FactoryGirl.create(:service)
@@ -41,7 +59,6 @@ describe "the admin path" do
     expect(page).to have_content "Hello Admin!"
     click_on service.name
     click_link "Add a review"
-    save_and_open_page
     fill_in 'review[content]', :with => "Nom Nom"
     fill_in 'review[author]', :with => "Nosher"
     click_button "Submit Review"
