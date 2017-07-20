@@ -45,6 +45,22 @@ describe "the admin path" do
     fill_in 'Description', :with => service.description
     fill_in 'Price', :with => service.price
     click_button "Update Service"
+    expect(page).to have_content "Service successfully updated!"
+  end
+
+  it "allows admin to delete a service" do
+    user = FactoryGirl.create(:user)
+    service = FactoryGirl.create(:service)
+    visit '/'
+    click_on 'Sign in'
+    expect(page).to have_content "Sign in"
+    fill_in 'Email', :with => user.email
+    fill_in 'Password', :with => user.password
+    click_button 'Sign in'
+    expect(page).to have_content "Hello Admin!"
+    click_on "Martini"
+    click_link "Delete Service"
+    expect(page).to have_content "Add a New Service"
   end
 
   it "allows admin to delete a review" do

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T18:19:50-07:00">2017-07-19T18:19:50-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-19T18:24:14-07:00">2017-07-19T18:24:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.23%</span></span>
+    (<span class="covered_percent"><span class="green">92.39%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.75
+         1.87
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>38</b> files in total.
-    <b>342</b> relevant lines. 
-    <span class="green"><b>312</b> lines covered</span> and
-    <span class="red"><b>30</b> lines missed </span>
+    <b>355</b> relevant lines. 
+    <span class="green"><b>328</b> lines covered</span> and
+    <span class="red"><b>27</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -87,7 +87,7 @@
         <td>14</td>
         <td>10</td>
         <td>4</td>
-        <td>14.4</td>
+        <td>16.9</td>
       </tr>
       
       <tr>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#b892af9668bc52796cf49252aa0c3a89f8dc4d1d" class="src_link" title="app/controllers/services_controller.rb">app/controllers/services_controller.rb</a></td>
-        <td class="red strong">79.31 %</td>
+        <td class="yellow strong">89.66 %</td>
         <td>50</td>
         <td>29</td>
-        <td>23</td>
-        <td>6</td>
-        <td>1.4</td>
+        <td>26</td>
+        <td>3</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
@@ -117,7 +117,7 @@
         <td>13</td>
         <td>8</td>
         <td>5</td>
-        <td>2.2</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
@@ -197,7 +197,7 @@
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>3.3</td>
+        <td>3.7</td>
       </tr>
       
       <tr>
@@ -353,9 +353,9 @@
       <tr>
         <td class="strong"><a href="#ae41162a313bc12efbd0d52b552b7776a42750c1" class="src_link" title="spec/features/admin_spec.rb">spec/features/admin_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>69</td>
-        <td>60</td>
-        <td>60</td>
+        <td>84</td>
+        <td>73</td>
+        <td>73</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -661,14 +661,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="covered" data-hits="106" data-linenumber="6">
-          <span class="hits">106</span>
+        <li class="covered" data-hits="124" data-linenumber="6">
+          <span class="hits">124</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
       
-        <li class="covered" data-hits="82" data-linenumber="7">
-          <span class="hits">82</span>
+        <li class="covered" data-hits="97" data-linenumber="7">
+          <span class="hits">97</span>
           
           <code class="ruby">    @current_user ||= User.find(session[:user_id])</code>
         </li>
@@ -739,8 +739,8 @@
           <code class="ruby">  def admin</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="19">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="19">
+          <span class="hits">4</span>
           
           <code class="ruby">    if !current_user || current_user.admin != true</code>
         </li>
@@ -1138,11 +1138,11 @@
         <div class="source_table" id="b892af9668bc52796cf49252aa0c3a89f8dc4d1d">
   <div class="header">
     <h3>app/controllers/services_controller.rb</h3>
-    <h4><span class="red">79.31 %</span> covered</h4>
+    <h4><span class="yellow">89.66 %</span> covered</h4>
     <div>
       <b>29</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="green"><b>26</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1173,8 +1173,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="5">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="15" data-linenumber="5">
+          <span class="hits">15</span>
           
           <code class="ruby">    @services = Service.all.order(:name)</code>
         </li>
@@ -1197,8 +1197,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="9">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="9" data-linenumber="9">
+          <span class="hits">9</span>
           
           <code class="ruby">    @service = Service.find(params[:id])</code>
         </li>
@@ -1389,20 +1389,20 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
           <code class="ruby">    @service = Service.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">    @service.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to services_path</code>
         </li>
@@ -1480,32 +1480,32 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="3">
+          <span class="hits">6</span>
           
           <code class="ruby">    @user = User.authenticate(params[:email], params[:password])</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="4">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="4">
+          <span class="hits">6</span>
           
           <code class="ruby">    if @user</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="5">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="5">
+          <span class="hits">6</span>
           
           <code class="ruby">      flash[:notice] = &quot;You&#39;ve signed in.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="6">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="6">
+          <span class="hits">6</span>
           
           <code class="ruby">      session[:user_id] = @user.id</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="7">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="7">
+          <span class="hits">6</span>
           
           <code class="ruby">      redirect_to &quot;/&quot;</code>
         </li>
@@ -2082,14 +2082,14 @@
           <code class="ruby">  def encrypt_password</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="10">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">    self.password_salt = BCrypt::Engine.generate_salt</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="11">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
           
           <code class="ruby">    self.password_hash = BCrypt::Engine.hash_secret(password,password_salt)</code>
         </li>
@@ -2112,20 +2112,20 @@
           <code class="ruby">  def self.authenticate(email, password)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="15">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="15">
+          <span class="hits">6</span>
           
           <code class="ruby">    user = User.find_by &quot;email = ?&quot;, email</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
           
           <code class="ruby">    if user &amp;&amp; user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">      user</code>
         </li>
@@ -3715,8 +3715,8 @@
     <h3>spec/features/admin_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>60</b> relevant lines. 
-      <span class="green"><b>60</b> lines covered</span> and
+      <b>73</b> relevant lines. 
+      <span class="green"><b>73</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4006,133 +4006,223 @@
           <code class="ruby">    click_button &quot;Update Service&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    expect(page).to have_content &quot;Service successfully updated!&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="50">
           
-          <code class="ruby">  it &quot;allows admin to delete a review&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
-          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+          <code class="ruby">  it &quot;allows admin to delete a service&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">    service = FactoryGirl.create(:service)</code>
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">    visit &#39;/&#39;</code>
+          <code class="ruby">    service = FactoryGirl.create(:service)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on &#39;Sign in&#39;</code>
+          <code class="ruby">    visit &#39;/&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &quot;Sign in&quot;</code>
+          <code class="ruby">    click_on &#39;Sign in&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; user.email</code>
+          <code class="ruby">    expect(page).to have_content &quot;Sign in&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; user.password</code>
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; user.email</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_button &#39;Sign in&#39;</code>
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; user.password</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(page).to have_content &quot;Hello Admin!&quot;</code>
+          <code class="ruby">    click_button &#39;Sign in&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_on service.name</code>
+          <code class="ruby">    expect(page).to have_content &quot;Hello Admin!&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
-          <code class="ruby">    click_link &quot;Add a review&quot;</code>
+          <code class="ruby">    click_on &quot;Martini&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">    save_and_open_page</code>
+          <code class="ruby">    click_link &quot;Delete Service&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">    fill_in &#39;review[content]&#39;, :with =&gt; &quot;Nom Nom&quot;</code>
+          <code class="ruby">    expect(page).to have_content &quot;Add a New Service&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    fill_in &#39;review[author]&#39;, :with =&gt; &quot;Nosher&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="65">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_button &quot;Submit Review&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="66">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    click_on &quot;Delete Review&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="67">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    expect(page).to have_content &quot;Review successfully deleted!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;allows admin to delete a review&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    service = FactoryGirl.create(:service)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Sign in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &quot;Sign in&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; user.email</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; user.password</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button &#39;Sign in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &quot;Hello Admin!&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on service.name</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;Add a review&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;review[content]&#39;, :with =&gt; &quot;Nom Nom&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;review[author]&#39;, :with =&gt; &quot;Nosher&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button &quot;Submit Review&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Delete Review&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="82">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &quot;Review successfully deleted!&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby">end</code>
