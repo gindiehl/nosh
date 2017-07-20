@@ -9,7 +9,7 @@ describe "the admin path" do
     fill_in 'Email', :with => user.email
     fill_in 'Password', :with => user.password
     click_button 'Sign in'
-    expect(page).to have_content "Nom Nom Nosh"
+    expect(page).to have_content "Hello Admin!"
   end
 
   it "allows admin to add a new service" do
@@ -21,8 +21,7 @@ describe "the admin path" do
     fill_in 'Email', :with => user.email
     fill_in 'Password', :with => user.password
     click_button 'Sign in'
-    expect(page).to have_content "Nom Nom Nosh"
-    save_and_open_page
+    expect(page).to have_content "Hello Admin!"
     click_on "Add a New Service"
     fill_in 'Name', :with => service.name
     fill_in 'Description', :with => service.description
