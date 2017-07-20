@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "the user sign up path" do
+describe "the user authorization path" do
   it "allows a user to sign up" do
     user = FactoryGirl.create(:user)
     service = FactoryGirl.create(:service)
@@ -13,5 +13,16 @@ describe "the user sign up path" do
     fill_in 'user[password_confirmation]', :with => user.password_confirmation
     click_button 'Sign Up'
     expect(page).to have_content 'Nom Nom Nosh'
+  end
+
+  it "allows a user to sign in" do
+    user = FactoryGirl.create(:user)
+    service = FactoryGirl.create(:service)
+    visit '/'
+    click_link 'Sign in'
+    fill_in 'Email', :with => user.email
+    fill_in 'Password', :with => user.password
+    click_button 'Sign in'
+    expect(page).to have_content "You've signed in."
   end
 end

@@ -7,4 +7,10 @@ describe "the show service detail path" do
     click_link service.name
     expect(page).to have_content service.name
   end
+
+  it "provides an error message to an unauthorized user" do
+    service = FactoryGirl.create(:service)
+    visit '/services/new'
+    expect(page).to have_content "You aren't authorized to visit that page."
+  end
 end
